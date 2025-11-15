@@ -1,0 +1,213 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "id": "S01",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [7.6361, 51.9607]
+            },
+            "properties": {
+                "city": "Münster",
+                "name": "Münster Hauptbahnhof",
+                "trainLines": [
+                    {
+                        "id": "L1",
+                        "from": "Dortmund",
+                        "to": "Osnabrück"
+                    },
+                    {
+                        "id": "L2",
+                        "from": "Münster",
+                        "to": "Hamburg"
+                    },
+                    {
+                        "id": "L3",
+                        "from": "Köln",
+                        "to": "Münster"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "S02",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [7.4598, 51.5181]
+            },
+            "properties": {
+                "city": "Dortmund",
+                "name": "Dortmund Hauptbahnhof",
+                "trainLines": [
+                    {
+                        "id": "L1",
+                        "from": "Dortmund",
+                        "to": "Osnabrück"
+                    },
+                    {
+                        "id": "L4",
+                        "from": "Dortmund",
+                        "to": "Berlin"
+                    },
+                    {
+                        "id": "L5",
+                        "from": "Essen",
+                        "to": "Dortmund"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "S03",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [8.0472, 52.2799]
+            },
+            "properties": {
+                "city": "Osnabrück",
+                "name": "Osnabrück Hauptbahnhof",
+                "trainLines": [
+                    {
+                        "id": "L1",
+                        "from": "Dortmund",
+                        "to": "Osnabrück"
+                    },
+                    {
+                        "id": "L6",
+                        "from": "Osnabrück",
+                        "to": "Bremen"
+                    },
+                    {
+                        "id": "L7",
+                        "from": "Hannover",
+                        "to": "Osnabrück"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "L1",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [7.4598, 51.5181],
+                    [7.4720, 51.5350],
+                    [7.4890, 51.5580],
+                    [7.5120, 51.5820],
+                    [7.5380, 51.6100],
+                    [7.5620, 51.6420],
+                    [7.5850, 51.6780],
+                    [7.6020, 51.7150],
+                    [7.6180, 51.7520],
+                    [7.6280, 51.7880],
+                    [7.6340, 51.8240],
+                    [7.6380, 51.8600],
+                    [7.6400, 51.8950],
+                    [7.6380, 51.9300],
+                    [7.6361, 51.9607],
+                    [7.6380, 51.9920],
+                    [7.6450, 52.0240],
+                    [7.6580, 52.0560],
+                    [7.6760, 52.0870],
+                    [7.6990, 52.1170],
+                    [7.7280, 52.1450],
+                    [7.7620, 52.1710],
+                    [7.7980, 52.1940],
+                    [7.8350, 52.2140],
+                    [7.8730, 52.2320],
+                    [7.9120, 52.2480],
+                    [7.9520, 52.2620],
+                    [7.9920, 52.2720],
+                    [8.0320, 52.2780],
+                    [8.0472, 52.2799]
+                ]
+            },
+            "properties": {
+                "line_id": "L1",
+                "name": "Train Line L1",
+                "from": "Dortmund",
+                "to": "Osnabrück",
+                "via": "Münster",
+                "distance_km": 98,
+                "type": "rail_line"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "L2",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [7.6361, 51.9607],
+                    [7.6450, 52.0100],
+                    [7.6580, 52.0650],
+                    [7.6820, 52.1200],
+                    [7.7150, 52.1750],
+                    [7.7580, 52.2300],
+                    [7.8120, 52.2850],
+                    [7.8750, 52.3400],
+                    [7.9480, 52.3950],
+                    [8.0320, 52.4500],
+                    [8.1250, 52.5050],
+                    [8.2280, 52.5600],
+                    [8.3420, 52.6150],
+                    [8.4650, 52.6700],
+                    [8.5980, 52.7250],
+                    [8.7420, 52.7800],
+                    [8.8950, 52.8350],
+                    [9.0580, 52.8900],
+                    [9.2320, 52.9450],
+                    [9.4150, 53.0000],
+                    [9.6080, 53.0550],
+                    [9.8120, 53.1100],
+                    [9.9950, 53.2000],
+                    [10.0000, 53.5511]
+                ]
+            },
+            "properties": {
+                "line_id": "L2",
+                "name": "Train Line L2",
+                "from": "Münster",
+                "to": "Hamburg",
+                "distance_km": 285,
+                "type": "rail_line"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "L3",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [6.9578, 50.9375],
+                    [7.0100, 51.0200],
+                    [7.0650, 51.1050],
+                    [7.1250, 51.1900],
+                    [7.1900, 51.2750],
+                    [7.2580, 51.3600],
+                    [7.3280, 51.4450],
+                    [7.4020, 51.5300],
+                    [7.4598, 51.5181],
+                    [7.5180, 51.6000],
+                    [7.5780, 51.6850],
+                    [7.6200, 51.7700],
+                    [7.6350, 51.8550],
+                    [7.6361, 51.9607]
+                ]
+            },
+            "properties": {
+                "line_id": "L3",
+                "name": "Train Line L3",
+                "from": "Köln",
+                "to": "Münster",
+                "via": "Dortmund",
+                "distance_km": 120,
+                "type": "rail_line"
+            }
+        }
+    ]
+}

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tn:TrainNetwork 
+    xmlns:tn="http://example.com/trainnetwork"
+    xmlns:gml="http://www.opengis.net/gml/3.2"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://example.com/trainnetwork train_network_gml_schema.xsd"
+    gml:id="TN01">
+    
+    <gml:description>Train network in North Rhine-Westphalia and Lower Saxony</gml:description>
+    <gml:name>NRW-NS Train Network</gml:name>
+    
+    <tn:station>
+        <tn:Station gml:id="S01">
+            <gml:description>Main railway station in Münster</gml:description>
+            <gml:name>Münster Hauptbahnhof</gml:name>
+            <tn:city>Münster</tn:city>
+            <tn:location>
+                <gml:Point gml:id="PT01" srsName="EPSG:4326">
+                    <gml:pos>51.9607 7.6361</gml:pos>
+                </gml:Point>
+            </tn:location>
+            <tn:trainLines>
+                <tn:trainLine id="L1">
+                    <tn:from>Dortmund</tn:from>
+                    <tn:to>Osnabrück</tn:to>
+                </tn:trainLine>
+                <tn:trainLine id="L2">
+                    <tn:from>Münster</tn:from>
+                    <tn:to>Hamburg</tn:to>
+                </tn:trainLine>
+                <tn:trainLine id="L3">
+                    <tn:from>Köln</tn:from>
+                    <tn:to>Münster</tn:to>
+                </tn:trainLine>
+            </tn:trainLines>
+        </tn:Station>
+    </tn:station>
+    
+    <tn:station>
+        <tn:Station gml:id="S02">
+            <gml:description>Main railway station in Dortmund</gml:description>
+            <gml:name>Dortmund Hauptbahnhof</gml:name>
+            <tn:city>Dortmund</tn:city>
+            <tn:location>
+                <gml:Point gml:id="PT02" srsName="EPSG:4326">
+                    <gml:pos>51.5181 7.4598</gml:pos>
+                </gml:Point>
+            </tn:location>
+            <tn:trainLines>
+                <tn:trainLine id="L1">
+                    <tn:from>Dortmund</tn:from>
+                    <tn:to>Osnabrück</tn:to>
+                </tn:trainLine>
+                <tn:trainLine id="L4">
+                    <tn:from>Dortmund</tn:from>
+                    <tn:to>Berlin</tn:to>
+                </tn:trainLine>
+                <tn:trainLine id="L5">
+                    <tn:from>Essen</tn:from>
+                    <tn:to>Dortmund</tn:to>
+                </tn:trainLine>
+            </tn:trainLines>
+        </tn:Station>
+    </tn:station>
+    
+    <tn:station>
+        <tn:Station gml:id="S03">
+            <gml:description>Main railway station in Osnabrück</gml:description>
+            <gml:name>Osnabrück Hauptbahnhof</gml:name>
+            <tn:city>Osnabrück</tn:city>
+            <tn:location>
+                <gml:Point gml:id="PT03" srsName="EPSG:4326">
+                    <gml:pos>52.2799 8.0472</gml:pos>
+                </gml:Point>
+            </tn:location>
+            <tn:trainLines>
+                <tn:trainLine id="L1">
+                    <tn:from>Dortmund</tn:from>
+                    <tn:to>Osnabrück</tn:to>
+                </tn:trainLine>
+                <tn:trainLine id="L6">
+                    <tn:from>Osnabrück</tn:from>
+                    <tn:to>Bremen</tn:to>
+                </tn:trainLine>
+                <tn:trainLine id="L7">
+                    <tn:from>Hannover</tn:from>
+                    <tn:to>Osnabrück</tn:to>
+                </tn:trainLine>
+            </tn:trainLines>
+        </tn:Station>
+    </tn:station>
+    
+</tn:TrainNetwork>

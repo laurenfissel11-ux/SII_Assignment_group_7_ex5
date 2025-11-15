@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:gml="http://www.opengis.net/gml/3.2"
+           xmlns:tn="http://example.com/trainnetwork"
+           targetNamespace="http://example.com/trainnetwork"
+           elementFormDefault="qualified">
+
+    <!-- Import GML 3.2.1 schema -->
+    <xs:import namespace="http://www.opengis.net/gml/3.2"
+               schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+
+    <!-- Root element for collection of stations -->
+    <xs:element name="TrainNetwork" type="tn:TrainNetworkType" substitutionGroup="gml:AbstractFeature"/>
+
+    <!-- Train Network type -->
+    <xs:complexType name="TrainNetworkType">
+        <xs:complexContent>
+            <xs:extension base="gml:AbstractFeatureType">
+                <xs:sequence>
+                    <xs:element name="station" type="tn:StationPropertyType" minOccurs="1" maxOccurs="unbounded"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <!-- Station property type -->
+    <xs:complexType name="StationPropertyType">
+        <xs:sequence>
+            <xs:element ref="tn:Station"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Station element -->
+    <xs:element name="Station" type="tn:StationType" substitutionGroup="gml:AbstractFeature"/>
+
+    <!-- Station type extending GML AbstractFeature -->
+    <xs:complexType name="StationType">
+        <xs:complexContent>
+            <xs:extension base="gml:AbstractFeatureType">
+                <xs:sequence>
+                    <xs:element name="city" type="xs:string"/>
+                    <xs:element name="location" type="gml:PointPropertyType"/>
+                    <xs:element name="trainLines" type="tn:TrainLinesType"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <!-- Train lines container type -->
+    <xs:complexType name="TrainLinesType">
+        <xs:sequence>
+            <xs:element name="trainLine" type="tn:TrainLineType" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Train line type -->
+    <xs:complexType name="TrainLineType">
+        <xs:sequence>
+            <xs:element name="from" type="xs:string"/>
+            <xs:element name="to" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:string" use="required"/>
+    </xs:complexType>
+
+</xs:schema>

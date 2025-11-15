@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+
+    <!-- Root element -->
+    <xs:element name="train_network">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="station" type="StationType" minOccurs="1" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Station type -->
+    <xs:complexType name="StationType">
+        <xs:sequence>
+            <xs:element name="city" type="xs:string"/>
+            <xs:element name="coordinates" type="CoordinatesType"/>
+            <xs:element name="trainLines" type="TrainLinesType"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:ID" use="required"/>
+    </xs:complexType>
+
+    <!-- Coordinates type -->
+    <xs:complexType name="CoordinatesType">
+        <xs:sequence>
+            <xs:element name="longitude" type="xs:decimal"/>
+            <xs:element name="latitude" type="xs:decimal"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Train lines container type -->
+    <xs:complexType name="TrainLinesType">
+        <xs:sequence>
+            <xs:element name="trainLine" type="TrainLineType" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Train line type -->
+    <xs:complexType name="TrainLineType">
+        <xs:sequence>
+            <xs:element name="from" type="xs:string"/>
+            <xs:element name="to" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:string" use="required"/>
+    </xs:complexType>
+
+</xs:schema>

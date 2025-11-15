@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Stations GeoJSON Viewer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="map"></div>
+    <div class="info-panel">
+        <h3>🚂 Train Network</h3>
+        <p><strong>Stations:</strong> 3</p>
+        <p><strong>Train Lines:</strong> 3</p>
+        <p><strong>Format:</strong> GeoJSON</p>
+        <p style="font-size: 12px; color: #999; margin-top: 10px;">
+            Click on stations or lines for details
+        </p>
+    </div>
+    
+    <div class="legend">
+        <h4>Train Lines</h4>
+        <div class="legend-item">
+            <div class="legend-line" style="background: #d32f2f;"></div>
+            <span>L1: Dortmund - Osnabrück</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-line" style="background: #1976d2;"></div>
+            <span>L2: Münster - Hamburg</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-line" style="background: #388e3c;"></div>
+            <span>L3: Köln - Münster</span>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

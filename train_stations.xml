@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<train_network 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="train_network_schema.xsd">
+    
+    <station id="S01">
+        <city>Münster</city>
+        <coordinates>
+            <longitude>7.6361</longitude>
+            <latitude>51.9607</latitude>
+        </coordinates>
+        <trainLines>
+            <trainLine id="L1">
+                <from>Dortmund</from>
+                <to>Osnabrück</to>
+            </trainLine>
+            <trainLine id="L2">
+                <from>Münster</from>
+                <to>Hamburg</to>
+            </trainLine>
+            <trainLine id="L3">
+                <from>Köln</from>
+                <to>Münster</to>
+            </trainLine>
+        </trainLines>
+    </station>
+    
+    <station id="S02">
+        <city>Dortmund</city>
+        <coordinates>
+            <longitude>7.4598</longitude>
+            <latitude>51.5181</latitude>
+        </coordinates>
+        <trainLines>
+            <trainLine id="L1">
+                <from>Dortmund</from>
+                <to>Osnabrück</to>
+            </trainLine>
+            <trainLine id="L4">
+                <from>Dortmund</from>
+                <to>Berlin</to>
+            </trainLine>
+            <trainLine id="L5">
+                <from>Essen</from>
+                <to>Dortmund</to>
+            </trainLine>
+        </trainLines>
+    </station>
+    
+    <station id="S03">
+        <city>Osnabrück</city>
+        <coordinates>
+            <longitude>8.0472</longitude>
+            <latitude>52.2799</latitude>
+        </coordinates>
+        <trainLines>
+            <trainLine id="L1">
+                <from>Dortmund</from>
+                <to>Osnabrück</to>
+            </trainLine>
+            <trainLine id="L6">
+                <from>Osnabrück</from>
+                <to>Bremen</to>
+            </trainLine>
+            <trainLine id="L7">
+                <from>Hannover</from>
+                <to>Osnabrück</to>
+            </trainLine>
+        </trainLines>
+    </station>
+    
+</train_network>
