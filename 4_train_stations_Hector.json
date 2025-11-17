@@ -1,0 +1,69 @@
+{
+  "train_network": {
+    "stations": [
+      {
+        "id": "S04",
+        "name": "Düsseldorf Flughafen",
+        "city": "Düsseldorf",
+        "coordinates": {
+          "longitude": 6.766946,
+          "latitude": 51.277812
+        },
+        "trainLines": [
+          {
+            "id": "RE02",
+            "from": "Düsseldorf Flughafen",
+            "to": "Münster (Westf) Hbf"
+          },
+          {
+            "id": "RE05",
+            "from": "Düsseldorf Flughafen",
+            "to": "Bonn Hauptbahnhof"
+          },
+          {
+            "id": "RE01",
+            "from": "Düsseldorf Flughafen",
+            "to": "Essen Hbf"
+          }
+        ]
+      },
+      {
+        "id": "S01",
+        "name": "Münster (Westf) Hbf",
+        "city": "Münster",
+        "coordinates": {
+          "longitude": 7.634,
+          "latitude": 51.962
+        },
+        "trainLines": [
+          {
+            "id": "RE02",
+            "from": "Düsseldorf Flughafen",
+            "to": "Münster (Westf) Hbf"
+          }
+        ]
+      },
+      {
+        "id": "S02",
+        "name": "Essen Hbf",
+        "city": "Essen",
+        "coordinates": {
+          "longitude": 7.013,
+          "latitude": 51.451
+        },
+        "trainLines": [
+          {
+            "id": "RE01",
+            "from": "Düsseldorf Flughafen",
+            "to": "Essen Hbf"
+          },
+          {
+            "id": "S3",
+            "from": "Essen Hbf",
+            "to": "Hattingen (Ruhr) Mitte"
+          }
+        ]
+      }
+    ]
+  }
+}

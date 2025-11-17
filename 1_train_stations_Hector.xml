@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<train_network
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="train_network_schema_Hector.xsd">
+
+  <station id="S04">
+    <name>Düsseldorf Flughafen</name>
+    <city>Düsseldorf</city>
+    <coordinates>
+            <longitude>6.766946</longitude>
+            <latitude>51.277812</latitude>
+        </coordinates>
+    <trainLines>
+      <trainLine id="RE02">
+                <from>Düsseldorf Flughafen</from>
+                <to>Münster (Westf) Hbf</to>
+            </trainLine>
+      <trainLine id="RE05">
+                <from>Düsseldorf Flughafen</from>
+                <to>Bonn Hauptbahnhof</to>
+            </trainLine>
+      <trainLine id="RE01">
+                <from>Düsseldorf Flughafen</from>
+                <to>Essen Hbf</to>
+            </trainLine>
+    </trainLines>
+  </station>
+
+  <station id="S05">
+    <name>Bonn Hauptbahnhof</name>
+    <city>Bonn</city>
+    <coordinates>
+            <longitude>7.096879</longitude>
+            <latitude>50.731986</latitude>
+        </coordinates>
+    <trainLines>
+      <trainLine id="RE12">
+                <from>Bonn Hauptbahnhof</from>
+                <to>Trier Hbf</to>
+            </trainLine>
+      <trainLine id="RE05">
+                <from>Düsseldorf Flughafen</from>
+                <to>Bonn Hauptbahnhof</to>
+            </trainLine>
+      <trainLine id="RE26">
+                <from>Bonn Hauptbahnhof</from>
+                <to>Köln Hbf</to>
+            </trainLine>
+    </trainLines>
+  </station>
+
+  <station id="S06">
+    <name>Essen Hbf</name>
+    <city>Essen</city>
+    <coordinates>
+            <longitude>7.013848</longitude>
+            <latitude>51.451180</latitude>
+        </coordinates>
+    <trainLines>
+      <trainLine id="S1">
+                <from>Essen Hbf</from>
+                <to>Dortmund Hbf</to>
+            </trainLine>
+      <trainLine id="S3">
+                <from>Essen Hbf</from>
+                <to>Hattingen(Ruht) Mitte</to>
+            </trainLine>
+      <trainLine id="RE01">
+                <from>Düsseldorf Flughafen</from>
+                <to>Essen Hbf</to>
+            </trainLine>
+    </trainLines>
+  </station>
+
+</trainNetwork>
