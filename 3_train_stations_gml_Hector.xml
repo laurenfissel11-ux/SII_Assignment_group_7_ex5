@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<train_network
+    xmlns="http://example.org/train_network"
+    xmlns:gml="http://www.opengis.net/gml/3.2"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+      http://example.org/train_network 3_train_network_gml_schema_Hector.xsd
+      http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd">
+
+  <!-- Station 1: Düsseldorf Flughafen (from your original XML) -->
+  <station gml:id="S04" id="S04">
+    <gml:identifier codeSpace="http://example.org/train_network/station">S04</gml:identifier>
+    <name>Düsseldorf Flughafen</name>
+    <city>Düsseldorf</city>
+    <coordinates>
+      <gml:Point gml:id="S04_point" srsName="urn:ogc:def:crs:EPSG::4326">
+        <!-- lon lat -->
+        <gml:pos>6.766946 51.277812</gml:pos>
+      </gml:Point>
+    </coordinates>
+    <trainLines>
+      <trainLine id="RE02">
+        <from>Düsseldorf Flughafen</from>
+        <to>Münster (Westf) Hbf</to>
+      </trainLine>
+      <trainLine id="RE01">
+        <from>Düsseldorf Flughafen</from>
+        <to>Essen Hbf</to>
+      </trainLine>
+    </trainLines>
+  </station>
+
+  <!-- Station 2: Münster (Westf) Hbf -->
+  <station gml:id="S01" id="S01">
+    <gml:identifier codeSpace="http://example.org/train_network/station">S01</gml:identifier>
+    <name>Münster (Westf) Hbf</name>
+    <city>Münster</city>
+    <coordinates>
+      <gml:Point gml:id="S01_point" srsName="urn:ogc:def:crs:EPSG::4326">
+        <gml:pos>7.634 51.962</gml:pos>
+      </gml:Point>
+    </coordinates>
+    <trainLines>
+      <trainLine id="RE02">
+        <from>Düsseldorf Flughafen</from>
+        <to>Münster (Westf) Hbf</to>
+      </trainLine>
+      <trainLine id="RE06">
+        <from>Münster (Westf) Hbf</from>
+        <to>Dortmund Hbf</to>
+      </trainLine>
+    </trainLines>
+  </station>
+
+  <!-- Station 3: Essen Hbf -->
+  <station gml:id="S02" id="S02">
+    <gml:identifier codeSpace="http://example.org/train_network/station">S02</gml:identifier>
+    <name>Essen Hbf</name>
+    <city>Essen</city>
+    <coordinates>
+      <gml:Point gml:id="S02_point" srsName="urn:ogc:def:crs:EPSG::4326">
+        <gml:pos>7.013 51.451</gml:pos>
+      </gml:Point>
+    </coordinates>
+    <trainLines>
+      <trainLine id="RE01">
+        <from>Düsseldorf Flughafen</from>
+        <to>Essen Hbf</to>
+      </trainLine>
+      <trainLine id="S3">
+        <from>Essen Hbf</from>
+        <to>Hattingen (Ruhr) Mitte</to>
+      </trainLine>
+    </trainLines>
+  </station>
+
+</train_network>

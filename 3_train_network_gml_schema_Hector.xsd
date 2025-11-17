@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:gml="http://www.opengis.net/gml/3.2"
+    xmlns:tn="http://example.org/train_network"
+    targetNamespace="http://example.org/train_network"
+    elementFormDefault="qualified">
+
+  <!-- Import GML 3.2.1 -->
+  <xs:import
+      namespace="http://www.opengis.net/gml/3.2"
+      schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+
+  <!-- Root element -->
+  <xs:element name="train_network">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="station" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Station as a GML feature -->
+  <xs:element name="station"
+              type="StationType"
+              substitutionGroup="gml:AbstractFeature"/>
+
+  <xs:complexType name="StationType">
+    <xs:complexContent>
+      <xs:extension base="gml:AbstractFeatureType">
+        <xs:sequence>
+          <xs:element name="name" type="xs:string"/>
+          <xs:element name="city" type="xs:string"/>
+          <!-- now using a GML geometry -->
+          <xs:element name="coordinates" type="gml:PointPropertyType"/>
+          <xs:element name="trainLines" type="TrainLinesType"/>
+        </xs:sequence>
+        <!-- optional local id in addition to gml:id -->
+        <xs:attribute name="id" type="xs:string" use="optional"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <!-- trainLines container -->
+  <xs:complexType name="TrainLinesType">
+    <xs:sequence>
+      <xs:element name="trainLine" type="TrainLineType" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- trainLine with id, from, to -->
+  <xs:complexType name="TrainLineType">
+    <xs:sequence>
+      <xs:element name="from" type="xs:string"/>
+      <xs:element name="to" type="xs:string"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:string" use="required"/>
+  </xs:complexType>
+
+</xs:schema>

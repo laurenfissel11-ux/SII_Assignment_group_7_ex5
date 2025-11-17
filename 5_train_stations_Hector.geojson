@@ -1,0 +1,150 @@
+{
+  "type": "FeatureCollection",
+  "name": "train_stations",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "S04",
+        "name": "Düsseldorf Flughafen",
+        "city": "Düsseldorf",
+        "trainLines": [
+          {
+            "id": "RE02",
+            "from": "Düsseldorf Flughafen",
+            "to": "Münster (Westf) Hbf"
+          },
+          {
+            "id": "RE05",
+            "from": "Düsseldorf Flughafen",
+            "to": "Bonn Hauptbahnhof"
+          },
+          {
+            "id": "RE01",
+            "from": "Düsseldorf Flughafen",
+            "to": "Essen Hbf"
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [6.766946, 51.277812]
+      }
+    },
+     {
+      "type": "Feature",
+      "properties": {
+        "id": "S05",
+        "name": "Bonn Hauptbahnhof",
+        "city": "Bonn",
+        "trainLines": [
+          {
+            "id": "RE12",
+            "from": "Bonn Hauptbahnhof",
+            "to": "Trier Hbf"
+          },
+          {
+            "id": "RE05",
+            "from": "Düsseldorf Flughafen",
+            "to": "Bonn Hauptbahnhof"
+          },
+          {
+            "id": "RE26",
+            "from": "Bonn Hauptbahnhof",
+            "to": "Köln Hbf"
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [7.096879, 50.731986]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "S06",
+        "name": "Essen Hbf",
+        "city": "Essen",
+        "trainLines": [
+          {
+            "id": "S1",
+            "from": "Essen Hbf",
+            "to": "Dortmund Hbf"
+          },
+          {
+            "id": "RE01",
+            "from": "Düsseldorf Flughafen",
+            "to": "Essen Hbf"
+          },
+          {
+            "id": "S3",
+            "from": "Essen Hbf",
+            "to": "Hattingen (Ruhr) Mitte"
+          }
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [7.013848, 51.451180]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "line_id": "RE01",
+        "name": "RE01 Düsseldorf Flughafen - Essen Hbf",
+        "from": "Düsseldorf Flughafen",
+        "to": "Essen Hbf",
+        "via": "Düsseldorf Hbf, Duisburg Hbf",
+        "distance_km": 35
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [6.766946, 51.277812],
+          [6.777073, 51.429366]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "line_id": "RE02",
+        "name": "RE02 Düsseldorf Flughafen - Münster (Westf) Hbf",
+        "from": "Düsseldorf Flughafen",
+        "to": "Münster (Westf) Hbf",
+        "via": "Düsseldorf Hbf, Duisburg Hbf, Essen Hbf",
+        "distance_km": 130
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [6.777073, 51.429366],
+          [7.013, 51.451],
+          [7.634, 51.962]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "line_id": "RE05",
+        "name": "RE05 Düsseldorf Flughafen - Bonn Hbf",
+        "from": "Düsseldorf Flughafen",
+        "to": "Bonn Hbf",
+        "via": "Düsseldorf Hbf, Köln Hbf",
+        "distance_km": 70
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [6.766946, 51.277812],
+          [6.958056, 50.9425],
+          [7.096594, 50.732729]
+        ]
+      }
+    }
+  ]
+}
