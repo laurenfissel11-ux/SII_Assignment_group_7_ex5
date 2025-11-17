@@ -38,8 +38,6 @@ RE02 – Düsseldorf Flughafen → Münster (Westf) Hbf
 
 RE05 – Düsseldorf Flughafen → Bonn Hbf
 
-S3 — Essen Hbf → Hattingen (Ruhr) Mitte
-
 Each line is a GeoJSON LineString with:
 
 Start / end station
@@ -62,7 +60,11 @@ project/
 │── 3_train_stations_gml_Hector.xml           # Train stations encoded following the GML schema
 │── 4_train_stations_Hector.json              # JSON version of the station dataset
 │── 5_train_stations_Hector.geojson           # GeoJSON (stations + lines combined)
-│── train_stations.geojson                    # Alternative or cleaned GeoJSON used for the map
+│── train_network_schema.xsd                  # Alternative XML Schema defining the train network structure
+│── train_network_gml_schema.xsd              # Alternative GML 3.2.1 application schema (extends the XML schema)
+│── train_stations_gml.xml                    # Alternative Train stations encoded following the GML schema
+│── train_stations.json                       # Alternative JSON version of the station dataset
+│── train_stations.geojson                    # Alternative GeoJSON used for the map
 
 │── index.html                                # Main webpage containing the Leaflet map
 │── script.js                                 # JavaScript logic: map initialization, icons, popups, loading GeoJSON
