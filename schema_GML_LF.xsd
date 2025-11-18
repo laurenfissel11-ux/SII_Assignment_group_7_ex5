@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:gml="http://www.opengis.net/gml/3.2"
+    xmlns:ts="http://example.com/trainstation"
+    targetNamespace="http://example.com/trainstation"
+    elementFormDefault="qualified">
+
+    <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+
+    <xs:element name="train_station">
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="gml:AbstractFeatureType">
+                    <xs:sequence>
+                        <!--city, simple element type-->
+                        <xs:element name="city" type="xs:string"/>
+                        <!--coordinates, complex element type-->
+                        <xs:element name="location" type="gml:PointPropertyType"/>
+                        <!--trainLines, complex element type-->
+                        <xs:element name="trainLines">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <!--trainLine, complex element type-->
+                                    <xs:element name="trainLine" maxOccurs="unbounded">
+                                        <xs:complexType>
+                                            <xs:sequence>
+                                                <!--"to" & "from" simple element types-->
+                                                <xs:element name="from" type="xs:string"/>
+                                                <xs:element name="to" type="xs:string"/>
+                                            </xs:sequence>
+                                            <!--trainLine id attribute-->
+                                            <xs:attribute name="id" type="xs:string" use="required"/>
+                                        </xs:complexType>
+                                    </xs:element>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                    <!--train_station id attribute-->
+                    <xs:attribute name="id" type="xs:string" use="required"/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

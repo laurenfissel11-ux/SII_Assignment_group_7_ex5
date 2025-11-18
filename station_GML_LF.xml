@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ts:train_station
+    xmlns:ts="http://example.com/trainstation"
+    xmlns:gml="http://www.opengis.net/gml/3.2"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://example.com/trainstation schema_GML_LF.xsd"
+    id="01">
+    <!--Root Element complete-->
+
+    <ts:city>Münster</ts:city>
+    
+    <ts:location>
+        <gml:Point gml:id="PT01">
+            <gml:pos>7.6261 51.9067</gml:pos>
+        </gml:Point>
+    </ts:location>
+
+    <ts:trainLines>
+
+        <ts:trainLine id="L1">
+            <ts:from>City01</ts:from>
+            <ts:to>Münster</ts:to>
+        </ts:trainLine>
+
+        <ts:trainLine id="L2">
+            <ts:from>Münster</ts:from>
+            <ts:to>City04</ts:to>
+        </ts:trainLine>
+
+    </ts:trainLines>
+
+</ts:train_station>

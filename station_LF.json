@@ -1,0 +1,21 @@
+{
+    "id":"01",
+    "city":"Münster",
+    "location": {
+        "longitude": 7.6261,
+        "latitude": 51.9067
+    },
+    "trainLines": [
+        {
+            "id":"L1",
+            "from":"City01",
+            "to":"Münster"
+        },
+        {
+            "id":"L2",
+            "from":"Münster",
+            "to":"City04"
+        }
+    ]
+
+}

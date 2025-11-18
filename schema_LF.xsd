@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="train_station">
+        <xs:complexType>
+            <xs:sequence>
+                <!--city, simple element type-->
+                <xs:element name="city" type="xs:string"/>
+                <!--coordinates, complex element type-->
+                <xs:element name="coordinates">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <!--longitude & latitude, simple element types-->
+                            <xs:element name="longitude" type="xs:decimal"/>
+                            <xs:element name="latitude" type="xs:decimal"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <!--trainLines, complex element type-->
+                <xs:element name="trainLines">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <!--trainLine, complex element type-->
+                            <xs:element name="trainLine" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <!--"to" & "from" simple element types-->
+                                        <xs:element name="from" type="xs:string"/>
+                                        <xs:element name="to" type="xs:string"/>
+                                    </xs:sequence>
+                                    <!--trainLine id attribute-->
+                                    <xs:attribute name="id" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <!--train_station id attribute-->
+            <xs:attribute name="id" type="xs:string" use="required"/>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

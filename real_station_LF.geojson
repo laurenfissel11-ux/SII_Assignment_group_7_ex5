@@ -1,0 +1,51 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [7.6261, 51.9607]
+      },
+      "properties": {
+        "id": "01",
+        "city": "Münster"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [7.4653, 51.5136],
+          [7.55, 51.75],
+          [7.6261, 51.9607]
+        ]
+      },
+      "properties": {
+        "id": "L1",
+        "from": "Dortmund",
+        "to": "Münster"
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [7.6261, 51.9607],
+          [7.85, 52.1],
+          [8.0472, 52.2799]
+        ]
+      },
+      "properties": {
+        "id": "L2",
+        "from": "Münster",
+        "to": "Osnabrück"
+      }
+    }
+  ]
+}

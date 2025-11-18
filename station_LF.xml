@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?> <!--XML Prolog, optional-->
+<train_station 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="schema_LF.xsd"
+    id="01">
+    <!--Root element complete-->
+
+    <city>Münster</city>
+
+    <coordinates>
+        <longitude>7.6261</longitude>
+        <latitude>51.9607</latitude>
+    </coordinates>
+
+    <trainLines>
+        <trainLine id="01">
+            <from>City1</from>
+            <to>City2</to>
+        </trainLine>
+        <trainLine id="01">
+            <from>City3</from>
+            <to>City4</to>
+        </trainLine>
+    </trainLines>
+
+</train_station>
